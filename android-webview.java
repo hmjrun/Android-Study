@@ -1,13 +1,5 @@
 package com.hmj.webview;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.app.ProgressDialog;
-import android.view.KeyEvent;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 /*
  *webview的使用技巧，示例。
  */

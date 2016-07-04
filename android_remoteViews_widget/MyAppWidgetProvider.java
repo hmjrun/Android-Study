@@ -17,7 +17,7 @@ res/layout/widget.xml
 
 -----------------------------------------------------------------------
  res/xml/appwidget_provide_info.xml
- -----------------------------------------------------------------------
+-----------------------------------------------------------------------
 <?xml version="1.0" encoding="utf-8"?>
  <!-- updatePeriodMillis 单位毫秒，每隔这段时间，会更新触发 -->
 <appwidget-provider
@@ -33,17 +33,18 @@ res/layout/widget.xml
 AndroidManifest.xml / <application>
 -------------------------------------------------------------------------
 <receiver 
-            android:name="com.hmj.widget.MyAppWidgetProvider"
-            >
-            <meta-data  
-                android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_provide_info"
-                />
-            <intent-filter> 
-                <action android:name="com.hmj.widget.CLICK"/>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
-            </intent-filter>
-        </receiver>
+    android:name="com.hmj.widget.MyAppWidgetProvider">
+
+    <meta-data  
+        android:name="android.appwidget.provider"
+        android:resource="@xml/appwidget_provide_info"
+    />
+
+    <intent-filter> 
+        <action android:name="com.hmj.widget.CLICK"/>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </intent-filter>
+</receiver>
 
 -------------------------------------------------------------------------
 com.hmj.widget.MyAppWidgetProvider
